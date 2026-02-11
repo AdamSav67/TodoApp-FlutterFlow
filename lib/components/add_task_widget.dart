@@ -87,21 +87,31 @@ class _AddTaskWidgetState extends State<AddTaskWidget> {
                 ),
               ],
             ),
-            Text(
-              'Add Task',
-              style: FlutterFlowTheme.of(context).headlineLarge.override(
-                    font: GoogleFonts.inter(
-                      fontWeight:
-                          FlutterFlowTheme.of(context).headlineLarge.fontWeight,
-                      fontStyle:
-                          FlutterFlowTheme.of(context).headlineLarge.fontStyle,
-                    ),
-                    letterSpacing: 0.0,
-                    fontWeight:
-                        FlutterFlowTheme.of(context).headlineLarge.fontWeight,
-                    fontStyle:
-                        FlutterFlowTheme.of(context).headlineLarge.fontStyle,
-                  ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Add Task',
+                  style: FlutterFlowTheme.of(context).headlineLarge.override(
+                        font: GoogleFonts.inter(
+                          fontWeight: FlutterFlowTheme.of(context)
+                              .headlineLarge
+                              .fontWeight,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .headlineLarge
+                              .fontStyle,
+                        ),
+                        letterSpacing: 0.0,
+                        fontWeight: FlutterFlowTheme.of(context)
+                            .headlineLarge
+                            .fontWeight,
+                        fontStyle: FlutterFlowTheme.of(context)
+                            .headlineLarge
+                            .fontStyle,
+                      ),
+                ),
+              ],
             ),
             Container(
               width: double.infinity,
